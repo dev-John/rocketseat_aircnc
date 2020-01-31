@@ -8,24 +8,26 @@ export default function Login({ history }) {
 
     async function handleSubmit(event){
         event.preventDefault();
-        
+
         const response =  await api.post('/sessions', { email });
-        
+    
         const { _id } = response.data;
 
         localStorage.setItem('user', _id);
 
-        history.push('/profile');
+        history.push('/profile');        
+        
     }
 
     return (
         <>
             <p>
-            Ofereça <strong>spots</strong> para programadores e encontre <strong>talentos</strong> para sua empresa
+                Ofereça <strong>spots</strong> para programadores e encontre <strong>talentos</strong> para sua empresa
             </p>
 
             <form onSubmit={handleSubmit}>
             <label htmlFor="email">E-MAIL *</label>
+            {/* <span className="required-field" htmlFor="email"> { validator ? '' : 'este campo é obrigatório' }</span> */}
             <input 
                 type="email" 
                 id="email" 
