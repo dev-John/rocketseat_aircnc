@@ -2,9 +2,9 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 19880,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
+  "packagerPid": 17948,
+  "expoServerNgrokUrl": "https://sj-mwy.anonymous.mobile.exp.direct",
+  "packagerNgrokUrl": "https://packager.sj-mwy.anonymous.mobile.exp.direct",
+  "ngrokPid": 11284,
   "webpackServerPort": 19006
 }
